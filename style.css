@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("./images/bg-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #674baf;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body .logo {
+  padding: 50px;
+}
+
+body .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .main-container .image {
+  width: 50%;
+  padding: 50px;
+}
+
+body .main-container .image img {
+  width: 100%;
+}
+
+body .main-container .text-container {
+  width: 50%;
+  padding: 50px 60px;
+  color: white;
+}
+
+body .main-container .text-container h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+body .main-container .text-container p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+}
+
+body .main-container .text-container button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  border: none;
+  display: block;
+  margin-top: 20px;
+  padding: 15px 50px;
+  border-radius: 100px;
+  background-color: #bd7abd;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+body .main-container .text-container button:hover {
+  background-color: #e882e8;
+}
+
+body .main-container .text-container footer {
+  width: 100%;
+  height: 10vh;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+body .main-container .text-container footer span {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  margin: 0 10px;
+  border: 3px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+body .main-container .text-container footer span i {
+  font-size: 1.4rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+body .main-container .text-container footer span:hover {
+  border-color: #e882e8;
+  cursor: pointer;
+}
+
+body .main-container .text-container footer span:hover i {
+  color: #e882e8;
+}
+
+@media screen and (max-width: 1296px) {
+  body {
+    background-size: cover;
+  }
+  body .main-container .image {
+    padding: 10px;
+  }
+  body .main-container .text-container {
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  body {
+    background-size: contain;
+    height: auto;
+    overflow: scroll;
+  }
+  body .main-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .main-container .image {
+    width: 100%;
+    padding: 50px 100px;
+  }
+  body .main-container .text-container {
+    width: 100%;
+  }
+  body .main-container .text-container button {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 573px) {
+  body .main-container .image {
+    padding: 50px 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body .main-container .image {
+    padding: 50px 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
